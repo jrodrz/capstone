@@ -2,5 +2,6 @@ import html from "html-literal";
 
 export default() => html`
 <footer>
-contact us MyWebPage@anAddress.com</footer>
+&copy; 2020 <a href="https://TheFitFamily.com/">The Fit Family</a>
+</footer>
 `;

@@ -2,6 +2,6 @@ import html from "html-literal";
 
 export default () => html`
 <header>
-  <a class="logo" href ="#">  The Fit Family</a>
+<h1>The Fit Family</h1>
 </header>
 `;

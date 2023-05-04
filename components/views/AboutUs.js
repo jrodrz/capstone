@@ -2,16 +2,40 @@
 import html from "html-literal";
 
 export default() => html`
-<body>
-  <p>For those family members who cannot enjoy the gym, we provide easy, conveient, reliable alternatives, enabling those who can to enjoy their work out without guilt or worry.</p>
-  <ul>
-    <h3>participating gyms</h3>
-  </ul>
-  <ul>
-    <h3>participating doggy day cares</h3>
-  </ul>
-  <ul>
-    <h3>photo credits</h3>
-  </ul>
-</body>
-`;
+<section id="more">
+    <form id="more" method="POST" action="">
+      <h2>Please add in ...</h2>
+      <div>
+        <label for="location">Location:</label>
+        <input
+          type="text"
+          name="location"
+          id="location"
+          placeholder="Enter Location"
+          required
+        />
+      </div>
+      <div>
+        <label for="gym">Gym:</label>
+        <input
+          type="gym"
+          name="gym"
+          id="gym"
+          placeholder="Enter gym"
+          required
+        />
+      </div>
+      <div>
+        <label for="doggy day care">Doggy Day Care:</label>
+        <input
+          type="text"
+          name="doggy day care"
+          id="doggy day care"
+          placeholder="Doggy Day Care"
+          required
+        />
+      </div>
+      </section>
+  `;
+
+
