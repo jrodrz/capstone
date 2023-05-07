@@ -1,25 +1,3 @@
-#jumbotron {
-  background: url(assets/img/20220816_171022.jpg) center center no-repeat;  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 90vh;
-}
-
-#jumbotron > h2 {
-  color: red;
-  text-align: center;
-}
-
-#jumbotron > a {
-  text-decoration: none;
-  background-color: white;
-  font-size: 1.5em;
-  padding: 1.5rem;
-  border-radius: 10px;
-}
-
 header {
   color: red;
   font: italic 50px "Roboto", san-serif;
@@ -33,6 +11,11 @@ ol {
   display:flex;
   flex-direction: column;
   justify-content: end;
+}
+
+img {
+  height:50%;
+  align-content: center;
 }
 
 footer {
@@ -58,7 +41,7 @@ ul {
   justify-content: center;
 }
 
-@media (max-width: 549px){
+@media (max-width: 50px){
   .hidden--mobile {
     display: none !important;
   }
@@ -86,7 +69,7 @@ ul {
     list-style-type: none;
   }
 
-  @media (min-width: 550px) {
+  @media (min-width: 50px) {
     nav > ul {
       display: flex;
       justify-content: space-evenly;

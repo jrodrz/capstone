@@ -13,8 +13,6 @@ function render(state = store.Home) {
     ${Main(state)}
     ${Footer()}`;
 
-  render();
-
   afterRender(state);
 
   router.updatePageLinks();
@@ -38,21 +36,44 @@ router.hooks({
       case "Home":
         // New Axios get request utilizing already made environment variable
         axios
-          .get(`${process.env.THE_FIT_FAMILY_API_URL}/maps`)
-          .then((response) => {
-            // We need to store the response to the state, in the next step but in the meantime let's see what it looks like so that we know what to store from the response.
-              store.Map.maps = response.data;
-            done();
-          })
-          .catch((error) => {
-            console.log("It puked", error);
-            done();
-          });
-        break;
-      default:
+        .get(
+          `https://api.openweathermap.org/data/2.5/weather?appid=${process.env.7ee784f3bd541e178d23a003d165adc8}&q=st%20louis`
+        )
+        .then(response => {
+          const kelvinToFahrenheit = kelvinTemp =>
+            Math.round((kelvinTemp - 273.15) * (9 / 5) + 32);
+
+          store.Home.weather = {
+            city: response.data.name,
+            temp: kelvinToFahrenheit(response.data.main.temp),
+            feelsLike: kelvinToFahrenheit(response.data.main.feels_like),
+            description: response.data.weather[0].main
+          };
+          done();
+      })
+      .catch((err) => {
+        console.log(err);
         done();
-    }
-  },
+      });
+      break;
+
+    // Added in Lesson 7.1
+    case "Pizza":
+      axios
+        .get(`${process.env.THE_FIT_FAMILY_API_URL}/TheFitFamily`)
+        .then(response => {
+          store.Fitness.TheFitFamily = response.data;
+          done();
+        })
+        .catch((error) => {
+          console.log("It puked", error);
+          done();
+        });
+        break;
+    default :
+      done();
+  }
+},
   already: (params) => {
     const view =
       params && params.data && params.data.view
