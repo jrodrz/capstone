@@ -3,10 +3,7 @@ import * as store from "./store";
 import Navigo from "navigo";
 import { capitalize } from "lodash";
 import axios from "axios";
-import dotenv from "dotenv";
 
-// Make sure that dotenv.config(); is placed after all of you import statements
-dotenv.config();
 const router = new Navigo("/");
 
 function render(state = store.Home) {
@@ -14,8 +11,9 @@ function render(state = store.Home) {
     ${Header(state)}
     ${Nav(store.Links)}
     ${Main(state)}
-    ${Footer()}
-  `;
+    ${Footer()}`;
+
+  render();
 
   afterRender(state);
 
@@ -31,20 +29,19 @@ function afterRender(state) {
 
 router.hooks({
   before: (done, params) => {
-    const view =
-      params && params.data && params.data.view
+    const view = params && params.data && params.data.view
         ? capitalize(params.data.view)
         : "Home";
+
     // Add a switch case statement to handle multiple routes
     switch (view) {
-      case "Pizza":
+      case "Home":
         // New Axios get request utilizing already made environment variable
         axios
-          .get(`${process.env.PIZZA_PLACE_API_URL}/pizzas`)
+          .get(`${process.env.THE_FIT_FAMILY_API_URL}/maps`)
           .then((response) => {
             // We need to store the response to the state, in the next step but in the meantime let's see what it looks like so that we know what to store from the response.
-            console.log("response", response);
-            store.Pizza.pizzas = response.data;
+              store.Map.maps = response.data;
             done();
           })
           .catch((error) => {
@@ -65,6 +62,7 @@ router.hooks({
     render(store[view]);
   },
 });
+
 router
   .on({
     "/": () => render(),
