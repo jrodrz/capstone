@@ -1,0 +1,106 @@
+#jumbotron {
+  background: url(assets/img/20220816_171022.jpg) center center no-repeat;  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+#jumbotron > h2 {
+  color: red;
+  text-align: center;
+}
+
+#jumbotron > a {
+  text-decoration: none;
+  background-color: white;
+  font-size: 1.5em;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+header {
+  color: red;
+  font: italic 50px "Roboto", san-serif;
+  display:flex;
+  justify-content: center;
+ }
+
+ol {
+  color: blue;
+  font: 25px "Roboto", san-serif;
+  display:flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+footer {
+  color: red;
+  font: italic 15px "Roboto", san-serif;
+  display:flex;
+  justify-content: center;
+  }
+
+body {
+  color:black;
+  font: 40px "Roboto", san-serif;
+}
+
+h3 {
+  color:blue;
+ }
+
+ul {
+  color: blue;
+  font: 25px "Roboto", san-serif;
+  display:flex;
+  justify-content: center;
+}
+
+@media (max-width: 549px){
+  .hidden--mobile {
+    display: none !important;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  nav > i {
+    padding: 1rem;
+    font-size: 2em;
+  }
+
+  nav > ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 0;
+  }
+
+  nav > ul > li {
+    padding: 0.5rem;
+    list-style-type: none;
+  }
+
+  @media (min-width: 550px) {
+    nav > ul {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 0 0;
+    }
+
+    nav > ul > li {
+      display: inline-block;
+      text-decoration: none;
+      border: 1px solid;
+      padding: 0.5rem 0.5rem;
+      border-radius: 25px;
+    }
+
+    nav > .fa-bars {
+      display: none;
+    }
