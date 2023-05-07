@@ -3,6 +3,7 @@ import html from "html-literal";
 
 export default () => html`;
 <header>
-<h1>state.header</h1>
+<h2>The Fit Family</h2>
+
 </header>
 `;
