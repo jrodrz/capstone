@@ -1,4 +1,4 @@
-export { default as AboutUs } from "./AboutUs.js";
+export { default as AboutUs } from "./AboutUs";
 
-export { default as Home } from "./Home.js";
+export { default as Home } from "./Home";
 
