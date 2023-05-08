@@ -11,18 +11,19 @@ function render(state = store.Home) {
     ${Header(state)}
     ${Nav(store.Links)}
     ${Main(state)}
-    ${Footer()}`;
+    ${Footer()}
+    `;
 
   afterRender(state);
 
-  router.updatePageLinks();
+  router.updatePageLinks()
 }
 
 function afterRender(state) {
   // add menu toggle to bars icon in nav bar
   document.querySelector(".fa-bars").addEventListener("click", () => {
     document.querySelector("nav > ul").classList.toggle("hidden--mobile");
-  });
+  })
 }
 
 router.hooks({
@@ -37,7 +38,7 @@ router.hooks({
         // New Axios get request utilizing already made environment variable
         axios
         .get(
-          `https://api.openweathermap.org/data/2.5/weather?appid=${process.env.7ee784f3bd541e178d23a003d165adc8}&q=st%20louis`
+          `https://api.openweathermap.org/data/2.5/weather?appid=${process.env.OPEN_WEATHER_MAP_API_KEY}&q=st%20louis`
         )
         .then(response => {
           const kelvinToFahrenheit = kelvinTemp =>
@@ -82,8 +83,7 @@ router.hooks({
 
     render(store[view]);
   },
-});
-
+})
 router
   .on({
     "/": () => render(),

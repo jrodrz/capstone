@@ -1,7 +1,7 @@
 export default [
-  { title: "AboutUs", text: "AboutUS.js" },
-  { title: "GymMaps", text: "GymMaps.png" },
-  { title: "Home", text: "Home.js" },
-  { title: "NeighborhoodMaps", text: "NeighborhoodMaps.png" },
-  { title: "STLMap", text: "STLMap.png" },
+  { title: "AboutUs", text: "AboutUS" },
+  { title: "GymMap", text: "GymMaps" },
+  { title: "Home", text: "Home" },
+  { title: "Doggy Day Cares", text: "Doggy Day Cares" },
+  { title: "STLMap", text: "STLMap" },
 ];
