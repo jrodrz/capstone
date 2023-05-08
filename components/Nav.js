@@ -8,7 +8,7 @@ export default links => html`
     <li>STLMap</li>
     <li>Gym Maps</li>
     <li>Doggy Day Cares</li>
-    <li>Contact Us</li>
+    <li>About Us</li>
   </ul>
 </nav>
 `;
