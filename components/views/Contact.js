@@ -2,7 +2,7 @@
 import html from "html-literal";
 
 export default() => html`
-<section id="AboutUs">
+<section id="Contact">
 <p>
   <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
     <fieldset id="fs-frm-inputs">
