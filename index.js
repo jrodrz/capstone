@@ -59,7 +59,7 @@ router.hooks({
       break;
 
     // Added in Lesson 7.1
-    case "Pizza":
+    case "The Fit Family":
       axios
         .get(`${process.env.THE_FIT_FAMILY_API_URL}/TheFitFamily`)
         .then(response => {
