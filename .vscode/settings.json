@@ -19,7 +19,4 @@
   "workbench.enableExperiments": false,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.view.alwaysShowHeaderActions": true,
-  "editor.rulers": [
-      100, 120
-  ]
 }
