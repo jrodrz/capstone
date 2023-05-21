@@ -1,6 +1,5 @@
 .DS_Store
 .cache
-.parcel-cache
 dist
 node_modules
 *.sw*
@@ -8,3 +7,4 @@ node_modules
 .env
 .parcel-cache
 .vscode
+
