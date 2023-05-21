@@ -2,15 +2,14 @@ header {
   color: red;
   font: italic 50px "Roboto", san-serif;
   display:flex;
-  flex-wrap: center;
-  margin-top: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-top: 5vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
   margin-bottom: 5px;
-  padding-left: 30%;
-  padding-right: 20%;
+  padding: 5vw;
   border: red solid 5px;
-   }
+  justify-content: center;
+}
 
   @media (max-width: 549px){
     .hidden--mobile {

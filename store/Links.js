@@ -1,7 +1,7 @@
 export default [
-  { title: "STLMap", text: "STLMap" },
-  { title: "GymMap", text: "GymMaps" },
+  { title: "Neighborhood", text: "Neighborhoods" },
+  { title: "Gym", text: "Gyms" },
   { title: "Home", text: "Home" },
-  { title: "Doggy Day Cares", text: "Doggy Day Cares" },
+  { title: "Dog", text: "Dogs" },
   { title: "Contact", text: "Contact" },
 ];
