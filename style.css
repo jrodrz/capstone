@@ -118,5 +118,11 @@ h3 {
   color:blue;
  }
 
+  #Neighborhoods img {
+    float: left;
+    width: 25%;
+    height: auto;
+    margin-right: 1rem;
+  }
 
 
