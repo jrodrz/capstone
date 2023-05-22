@@ -1,24 +1,23 @@
-const mongoose = require("mongoose");
+// Define schema
+// https://mongoosejs.com/docs/models.html#compiling
+const AddressSchema = mongoose.Schema({
+  city: String,
+  street: String,
+  houseNumber: String,
+});
 
-const fitSchema = new mongoose.Schema({
-   neighborhood: {
-    type: String,
+const ContactInfoSchema = mongoose.Schema({
+  tel: [Number],
+  email: [String],
+  address: {
+    type: AddressSchema,
     required: true,
-    validate:  /^[A-Za-z ]*$/
   },
+});
 
-  gym: {
-    type: String,
-    validate: /^[A-Za-z0-9 ]*$/
-  },
-
-  doggy_day_care: {
-    type: String,
-    required: true,
-    validate: /^[A-Za-z0-9 ]*$/
-  },
- });
-
-const Fit = mongoose.model('Fit', fitSchema);
-
-module.exports = Fit;
+const CustomerSchema = mongoose.Schema({
+  firstName: String,
+  lastName: String,
+  company: String,
+  connectInfo: ContactInfoSchema,
+});
