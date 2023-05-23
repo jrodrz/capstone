@@ -24,6 +24,7 @@ function afterRender(state) {
   document.querySelector(".fa-bars").addEventListener("click", () => {
     document.querySelector("nav > ul").classList.toggle("hidden--mobile");
   });
+}
 
 router.hooks({
   before: (done, params) => {
