@@ -4,18 +4,15 @@ const fitSchema = new mongoose.Schema({
    neighborhood: {
     type: String,
     required: true,
-    validate:  /^[A-Za-z ]*$/
-  },
+   },
 
   gym: {
     type: String,
-    validate: /^[A-Za-z0-9 ]*$/
   },
 
-  doggy_day_care: {
+  doggy_daycare: {
     type: String,
     required: true,
-    validate: /^[A-Za-z0-9 ]*$/
   },
  });
 
