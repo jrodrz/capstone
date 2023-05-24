@@ -1,5 +1,4 @@
 export default {
-  header: "See the Gyms",
+  header: "Pick the Gym",
   view: "Gym",
-  gym: []
 };
