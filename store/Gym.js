@@ -1,4 +1,5 @@
 export default {
-  header: "The Fit Family",
-  view: "Contact",
+  header: "See the Gyms",
+  view: "Gym",
+  gym: []
 };
