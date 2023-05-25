@@ -16,3 +16,10 @@ export default() => html`
     </form>
   </section>
   `;
+
+#jumbotron; {
+  background: url(assets/img/photo-allMine.jpg) ;  background-size - cover;
+  display: flex;
+}
+
+
