@@ -1,4 +1,5 @@
 import html from "html-literal";
+import manyDogsPic from "../../assets/img/nosesNtails.jpg"
 
 export default() => html`
 <section id="">
@@ -15,4 +16,6 @@ export default() => html`
 <input type="submit" name="submit" value="Submit Gym" />
     </form>
   </section>
-  `;
+
+  <img
+  src = ${manyDogsPic} alt="Three Pit Bulls Playing in a Linving Room">`;
