@@ -1,5 +1,6 @@
 
 import html from "html-literal";
+import mackPic from "../../assets/img/20150703_131932.jpg"
 
 export default() => html`
 <section id="Contact">
@@ -16,4 +17,7 @@ export default() => html`
     </fieldset>
     <input type="submit" value="Submit">
   </form>
-</p>`
+</p>
+
+<img
+  src = ${mackPic} alt="Beagle riding in a car">`;

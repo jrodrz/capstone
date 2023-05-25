@@ -1,4 +1,5 @@
 import html from "html-literal";
+import lazyDogPic from "../../assets/img/allMine.jpg"
 
 export default() => html`
 <section id="Neighborhood">
@@ -15,11 +16,6 @@ export default() => html`
 <input type="submit" name="submit" value="Submit Neighborhood" />
     </form>
   </section>
-  `;
 
-#jumbotron; {
-  background: url(assets/img/photo-allMine.jpg) ;  background-size - cover;
-  display: flex;
-}
-
-
+<img
+  src = ${lazyDogPic} alt="Dog in chair with blanket and pillow">`;
