@@ -1,13 +1,13 @@
 const mongoose = require("mongoose");
 
-const gymSchema = new mongoose.Schema({
+const neighborhoodSchema = new mongoose.Schema({
 
-  gym: {
+  neighborhood: {
     type: String
   },
 
 });
 
-const gym = mongoose.model('Gym', gymSchema);
+const Neighborhood = mongoose.model('Neighborhood', neighborhoodSchema);
 
-module.exports = Gym;
+module.exports = Neighborhood;

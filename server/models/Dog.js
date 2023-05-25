@@ -1,13 +1,13 @@
 const mongoose = require("mongoose");
 
-const dogSchema = new mongoose.Schema({
+const gymSchema = new mongoose.Schema({
 
-  dog: {
+  gym: {
     type: String
   },
 
 });
 
-const dog = mongoose.model('Dog', dogSchema);
+const gym = mongoose.model('Gym', gymSchema);
 
-module.exports = Dog;
+module.exports = Gym;
