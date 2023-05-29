@@ -4,7 +4,6 @@ export default(state) => html`
 
 <img
   src = ${mapPic} alt="Map of St. Louis Neighboods">
-</a>
 
     <form id="nieghborhood" method="POST" action="">
       <h2>Pick your neighborhood</h2>
