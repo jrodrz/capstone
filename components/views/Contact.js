@@ -22,6 +22,5 @@ export default() => html`
 
 
 <img
-<a> src = ${mackPic} alt="Beagle riding in a car"</a>>
-
+src = ${mackPic} alt="Beagle riding in a car">
 `;
