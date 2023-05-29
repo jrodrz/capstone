@@ -17,5 +17,8 @@ export default() => html`
     </form>
   </section>
 
+  <a>
   <img
-  src = ${manyDogsPic} alt="Three Pit Bulls Playing in a Linving Room">`;
+  src = ${manyDogsPic} alt="Three Pit Bulls Playing in a Linving Room">
+</a>
+`;

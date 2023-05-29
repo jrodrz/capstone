@@ -19,5 +19,8 @@ export default() => html`
   </form>
 </p>
 
+<a>
 <img
-  src = ${mackPic} alt="Beagle riding in a car">`;
+  src = ${mackPic} alt="Beagle riding in a car">
+</a>
+`;

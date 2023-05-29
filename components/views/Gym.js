@@ -17,5 +17,8 @@ export default() => html`
     </form>
   </section>
 
+<a>
 <img
-  src = ${lazyDogPic} alt="Dog in chair with blanket and pillow">`;
+  src = ${lazyDogPic} alt="Dog in chair with blanket and pillow">
+</a>\>
+`;

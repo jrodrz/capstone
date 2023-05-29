@@ -1,3 +1,25 @@
+#jumbotron {
+  background: url(assets/img/allMine.jpg) center center no-repeat;  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+#jumbotron > h2 {
+  color: white;
+  text-align: center;
+}
+
+#jumbotron > a {
+  text-decoration: none;
+  background-color: white;
+  font-size: 1.5em;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
 header {
   color: red;
   font: italic 50px "Roboto", san-serif;
@@ -118,7 +140,9 @@ h3 {
   color:blue;
  }
 
-
-
-
+ form > input[type="submit"] {
+  width: 40%;
+  margin: 0.5rem;
+  margin-right: auto;
+}
 
