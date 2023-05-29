@@ -1,6 +1,6 @@
 
 import html from "html-literal";
-import mackPic from <a> "../../assets/img/20150703_131932.jpg" </a>
+import mackPic from "../../assets/img/20150703_131932.jpg"
 
 export default() => html`
 <section id="Contact">
@@ -20,8 +20,8 @@ export default() => html`
 </p>
 
 
-<a>
+
 <img
-  src = ${mackPic} alt="Beagle riding in a car">
-</a>
+<a> src = ${mackPic} alt="Beagle riding in a car"</a>>
+
 `;
