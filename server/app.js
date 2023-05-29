@@ -80,7 +80,10 @@ app.post("/add", (request, response) => {
   response.json(responseBody);
 });
 
-app.use("/neighborhood", neighborhood);
+app.use("/Neighborhood", neighborhood);
+
+
+
 
 // Tell the Express app to start listening
 // Let the humans know I am running and listening on 4040
