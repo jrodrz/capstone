@@ -2,20 +2,18 @@ import html from "html-literal";
 import manyDogsPic from "../../assets/img/nosesNtails.jpg"
 
 export default() => html`
-<section id="">
+<section id="dog">
     <form id="dog" method="POST" action="">
-    <div>
-        <label for="gym">Find A Doggy Daycare:</label>
-        <input
-          type="text"
-          name="dog"
-          id="dog"
-          placeholder="Enter Gym"
-        />
-</div>
-<input type="submit" name="submit" value="Submit Gym" />
-    </form>
-  </section>
+      <h2>Find a Doggy Daycare</h2>
+      <div>
+        <label for="dog">Dogs:</label>
+        <select id="dog" name="dog">
+          <option value="">Select a doggy Daycare</option>
+          <option value="Wolfgang">Wolfgang"s Pet Stop</option>
+          <option value="watering">The Watering Bowl</option>
+          <option value="Delmar">Delmar doggiedesign</option>
+         </select>
+      </div>
 
   <a>
   <img
