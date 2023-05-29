@@ -70,12 +70,12 @@ header {
       margin-right: 3rem;
     }
 
-    #bio img {
+    /* #bio img {
       float: left;
       width: 25%;
       height: auto;
       margin-right: 1rem;
-    }
+    } */
   }
 
 p {
@@ -118,41 +118,10 @@ h3 {
   margin-right: auto;
 }
 
-#Contact img {
-  float: center;
+img {
   max-width:  50%;
   max-height: 50%;
   margin-left: 25%;
   margin-right: 25%;
 }
 
-#Dog img {
-  float: center;
-  max-width:  50%;
-  max-height: 50%;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-
-#Gym img {
-  float: center;
-  max-width:  50%;
-  max-height: 50%;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-
-#Home img {
-  max-width:  50%;
-  max-height: 50%;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-
-#Neighborhoods img {
-  float: center;
-  max-width:  50%;
-  max-height: 50%;
-  margin-left: 25%;
-  margin-right: 25%;
-}
