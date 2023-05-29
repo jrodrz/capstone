@@ -20,7 +20,8 @@ export default() => html`
 </p>
 
 
+<a>
 <img
-  <a src = ${mackPic} alt="Beagle riding in a car">
+  src = ${mackPic} alt="Beagle riding in a car">
 </a>
 `;

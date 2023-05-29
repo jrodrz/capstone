@@ -78,6 +78,7 @@ header {
     }
   }
 img {
+  float: center;
   max-width:  50%;
   max-height: 50%;
   margin-left: 25%;
