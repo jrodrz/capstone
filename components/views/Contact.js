@@ -1,6 +1,6 @@
 
 import html from "html-literal";
-import mackPic from "../../assets/img/20150703_131932.jpg"
+import mackPic from "../../assets/img/mack.png"
 
 export default() => html`
 <section id="Contact">

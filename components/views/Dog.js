@@ -1,5 +1,4 @@
 import html from "html-literal";
-import manyDogsPic from "../../assets/img/nosesNtails.jpg"
 
 export default() => html`
 <section id="dog">
@@ -14,9 +13,4 @@ export default() => html`
           <option value="Delmar">Delmar doggiedesign</option>
          </select>
       </div>
-
-  <a>
-  <img
-  src = ${manyDogsPic} alt="Three Pit Bulls Playing in a Linving Room">
-</a>
 `;
