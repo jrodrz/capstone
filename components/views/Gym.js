@@ -1,7 +1,9 @@
 import html from "html-literal";
-import lazyDogPic from "../../assets/img/allMine.jpg"
+import door from "../../assets/img/doggyDoor.jpg"
 
 export default() => html`
+<img
+  src = ${backdoor} alt="Dog begging to come in">
     <form id="gym" method="POST" action="">
       <h2>Find a Gym</h2>
       <div>
@@ -14,9 +16,4 @@ export default() => html`
           <option value="denay">Denay's Fitness</option>
         </select>
       </div>
-
-<a>
-<img
-  src = ${lazyDogPic} alt="Dog in chair with blanket and pillow">
-</a>\>
 `;
