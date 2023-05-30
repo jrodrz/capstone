@@ -1,6 +1,6 @@
 import html from "html-literal";
 
-export default() => html`
+export default(state) => html`
 <section id="dog">
     <form id="dog" method="POST" action="">
       <h2>Find a Doggy Daycare</h2>

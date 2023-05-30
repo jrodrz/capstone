@@ -9,6 +9,7 @@ header {
   border: red solid 5px;
   justify-content: center;
 }
+
 @media (max-width: 549px){
   .hidden--mobile {
     display: none !important;
@@ -36,13 +37,6 @@ header {
     padding: 0.5rem;
     list-style-type: none;
   }
-
-  #bio img {
-    float: left;
-    width: 40%;
-    height: auto;
-    margin-right: 1rem;
-  }
 }
 
 @media (min-width: 550px) {
@@ -62,17 +56,6 @@ header {
 
   nav > .fa-bars {
     display: none;
-  }
-
-  #bio {
-    margin-right: 3rem;
-  }
-
-  #bio img {
-    float: left;
-    width: 25%;
-    height: auto;
-    margin-right: 1rem;
   }
 }
 
@@ -101,8 +84,6 @@ p {
   margin-right: 2%;
  }
 
-img {
-  margin-left: 35%;
-  margin-right: 30%;
-}
+
+
 

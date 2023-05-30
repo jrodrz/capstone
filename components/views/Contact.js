@@ -2,7 +2,7 @@
 import html from "html-literal";
 import mackPic from "../../assets/img/mack.png"
 
-export default() => html`
+export default(state) => html`
 <section id="Contact">
 <p>
   <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
