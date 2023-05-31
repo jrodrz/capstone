@@ -1,9 +1,7 @@
 import html from "html-literal";
-import door from "../../assets/img/doggy_door.jpg"
 
 export default(state) => html`
-<img
-  src = ${door} alt="Dog begging to come in">
+
     <form id="gym" method="POST" action="">
       <h2>Find a Gym</h2>
       <div>

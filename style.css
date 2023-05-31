@@ -84,6 +84,22 @@ p {
   margin-right: 2%;
  }
 
+form {
+  border: solid 1px black;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 1rem;
+}
+
+form > * {
+  margin: 0.5rem;
+}
+
+form > input[type="submit"] {
+  width: 40%;
+  margin: 0.5rem;
+  margin-right: auto;
+}
 
 
 
