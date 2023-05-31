@@ -6,11 +6,11 @@ export default(state) => html`
   src = ${mapPic} alt="Map of St. Louis Neighboods">
 
     <form id="neighborhood" method="POST" action="">
-      <h2>Pick your neighborhood</h2>
+      <h2>Pick your neighborhood to find a gym.</h2>
       <div>
         <label for="neighborhood">neighborhood:</label>
-        <select id="neighborhood" name="neighborhood">
-          <option value="">Select a Neighborhood</option>
-          <option value="cwe">Central West End</option>
+        <select id="neighborhood" name="neighborhood" onchange="window.location.href=this.value;">
+          <option value="">Select a Neighborhood to see local gyms.</option>
+          <option value="./Gym">Central West End</option>
       </div>
     `;

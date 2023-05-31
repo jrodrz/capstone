@@ -73,15 +73,12 @@ app.get("/weather/:city", (request, response) => {
 
 app.post("/add", (request, response) => {
   console.log(request.body);
-  const num1 = request.body.numberOne;
-  const num2 = request.body.numberTwo;
   const responseBody = {
-    sum: num1 + num2
   };
   response.json(responseBody);
 });
 
-app.use("/Dog", dog);
+app.use("/dog", dog);
 
 
 
