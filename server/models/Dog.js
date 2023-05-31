@@ -1,13 +1,14 @@
 const mongoose = require("mongoose");
 
-const gymSchema = new mongoose.Schema({
+const dogSchema = new mongoose.Schema({
 
-  gym: {
-    type: String
+  dog: {
+    type: String,
+    validate: /^[A-Za-z0-9 ]*$/
   },
 
 });
 
-const gym = mongoose.model('Gym', gymSchema);
+const Dog= mongoose.model('Dog', dogSchema);
 
-module.exports = Gym;
+module.exports = Dog;

@@ -2,7 +2,8 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
-const neighborhood = require("./routers/neighborhood");
+const dog = require("./routers/dog");
+
 
 // Initialize the Express application
 const app = express();
@@ -80,7 +81,7 @@ app.post("/add", (request, response) => {
   response.json(responseBody);
 });
 
-app.use("/Neighborhood", neighborhood);
+app.use("/Dog", dog);
 
 
 
