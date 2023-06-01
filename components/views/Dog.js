@@ -1,14 +1,20 @@
 import html from "html-literal";
 
+
 export default state => html`
-<table id="dog">
+<p>
+  <h4> Day care places for my</h4>
+</p>
+
+<table id="doggy day cares">
 <tr>
-  <th>dog</th>
-</tr>
-${state.pizzas
-  .map(pizza => {
+  <th>Dog</th>
+ </tr>
+${state.dogs
+  .map(dog => {
     return `<tr><td>${dog.dog}</td></tr>`;
   })
   .join("")}
 
-</table>`
+</table>
+`;
