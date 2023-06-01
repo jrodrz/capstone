@@ -7,7 +7,7 @@ export default(state) => html`
       <div>
         <label for="gym">Gym:</label>
         <select id="gym" name="gym" onchange="window.location.href=this.value;">
-          <option value="">Select a Gym to find a doogy daycare nearby.</option>
+          <option value="">Select a Gym to find a doggy daycare nearby.</option>
           <option value="./dog">Pure Barre</option>
           <option value="./dog">Orange Theory Fitness</option>
           <option value="./dog">Crossfit Happy Streets</option>
