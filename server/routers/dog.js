@@ -33,35 +33,35 @@ router.get("/", (request, response) => {
 //   });
 // });
 
-// router.delete("/:id", (request, response) => {
-//   Dog.findByIdAndRemove(request.params.id, {}, (error, record) => {
-//     if (error) return response.status(500).json(error.errors);
+router.delete("/:id", (request, response) => {
+  Dog.findByIdAndRemove(request.params.id, {}, (error, record) => {
+    if (error) return response.status(500).json(error.errors);
 
-//     response.json(record);
-//   });
-// });
+    response.json(record);
+  });
+});
 
-// router.put("/:id", (request, response) => {
-//   const body = request.body;
-//   Dog.findByIdAndUpdate(
-//     request.params.id,
-//     {
-//       $set: {
-//         // Take note that the customer is not included, so it can't update the customer
-//         dogs: body.dogs,
-//       }
-//     },
-//     {
-//       new: true,
-//       upsert: true
-//     },
-//     (error, record) => {
-//     if (error?.name === 'ValidationError') return response.status(400).json(error.errors);
-//     if (error) return response.status(500).json(error.errors);
+router.put("/:id", (request, response) => {
+  const body = request.body;
+  Dog.findByIdAndUpdate(
+    request.params.id,
+    {
+      $set: {
+        // Take note that the customer is not included, so it can't update the customer
+        dogs: body.dogs,
+      }
+    },
+    {
+      new: true,
+      upsert: true
+    },
+    (error, record) => {
+    if (error?.name === 'ValidationError') return response.status(400).json(error.errors);
+    if (error) return response.status(500).json(error.errors);
 
-//     response.json(record);
-//     }
-//   );
-// });
+    response.json(record);
+    }
+  );
+});
 
 module.exports = router;
