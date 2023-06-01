@@ -24,41 +24,6 @@ function afterRender(state) {
   document.querySelector(".fa-bars").addEventListener("click", () => {
     document.querySelector("nav > ul").classList.toggle("hidden--mobile");
   });
-
-  if (state.view === "Contact") {
-    document.querySelector("form").addEventListener("submit", event => {
-      event.preventDefault();
-
-      const inputList = event.target.elements;
-      console.log("Input Element List", inputList);
-
-      const gym = [];
-      // Interate over the toppings input group elements
-      for (let input of inputList.gyms) {
-        // If the value of the checked attribute is true then add the value to the toppings array
-        if (input.checked) {
-          gyms.push(input.value);
-        }
-      }
-
-      const requestData = {
-        neighborhoods: inputList.neighborhood.value,
-        gyms: inputList.gyms.value,
-      };
-      console.log("request Body", requestData);
-
-      axios
-        .post(`${process.env.THE_FIT_FAMILY_API_URL}/fit`, requestData)
-        .then(response => {
-          // Push the new pizza onto the Pizza state pizzas attribute, so it can be displayed in the pizza list
-          store.Fit.fits.push(response.data);
-          router.navigate("/");
-        })
-        .catch(error => {
-          console.log("It puked", error);
-        });
-    });
-  }
 }
 
 router.hooks({
@@ -94,11 +59,11 @@ router.hooks({
       break;
 
     // Added in Lesson 7.1
-    case "The Fit Family":
+    case "Dog":
       axios
-        .get(`${process.env.THE_FIT_FAMILY_API_URL}/TheFitFamily`)
+        .get(`${process.env.THE_FIT_FAMILY_API_URL}/Dog`)
         .then(response => {
-          store.Fitness.TheFitFamily = response.data;
+          store.Dog.dogs = response.data;
           done();
         })
         .catch((error) => {
