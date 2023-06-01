@@ -4,7 +4,8 @@ export default(state) => html`
 
 <img
   src = ${dogPic} alt="Cute lonesome dog face">
-<p>For those family members who cannot enjoy the gym, we provide easy, convenient, reliable alternatives. Enabling those who can, to enjoy their work out without guilt or worry.
+<p>
+  Click on Neighborhood to begin working out at the gym without the guilt or worry of leaving the your dog home alone.
 </section>
 <h3>
     The weather in ${state.weather.city} is

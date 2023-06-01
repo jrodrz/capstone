@@ -5,11 +5,12 @@ import mackPic from "../../assets/img/mack.png"
 export default(state) => html`
 <section id="Contact">
 <p>
- <!-- modify this form HTML and place wherever you want your form -->
-<form
-  action="https://formspree.io/f/mpzebnkg"
-  method="POST"
->
+<!-- modify this form HTML and place wherever you want your form -->
+<form>
+  <!-- action="https://formspree.io/f/xdovrnew"
+  method="POST" -->
+  <!-- > -->
+
   <label>
     Your email:
     <input type="email" name="email">
@@ -20,11 +21,4 @@ export default(state) => html`
   </label>
   <!-- your other form fields go here -->
   <button type="submit">Send</button>
-</form>
-
-</p>
-<div>
-  <img
-  src = ${mackPic} alt="Beagle riding in a car">
-</div>
-`;
+</form>`
