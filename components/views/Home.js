@@ -5,7 +5,7 @@ export default(state) => html`
 <img
   src = ${dogPic} alt="Cute lonesome dog face">
 <p>
-  Click on Neighborhood to begin working out at the gym without the guilt or worry of leaving the your dog home alone.
+  Click on Neighborhood to begin working out, at the gym, without the guilt or worry of leaving the your dog home alone.
 </section>
 <h3>
     The weather in ${state.weather.city} is
