@@ -3,6 +3,8 @@ import html from "html-literal";
 import mackPic from "../../assets/img/mack.png"
 
 export default(state) => html`
+<img
+  src = ${mackPic} alt="Dog riding in car">
 <section id="Contact">
 <p>
 <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mayzgwol" method="post">
