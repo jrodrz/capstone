@@ -6,13 +6,13 @@ export default state => html`
   <h4> Day care places for my</h4>
 </p>
 
-<table id="doggy day cares">
+<table id="dogs">
 <tr>
   <th>Dog</th>
  </tr>
-${state.dog
-  .map(dog => {
-    return `<tr><td>${dog.dog}</td></tr>`;
+${state.dogs
+  .get(dog = {
+    return:dog
   })
   .join("")}
 

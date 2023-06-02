@@ -61,9 +61,9 @@ router.hooks({
     // Added in Lesson 7.1
     case "Dog":
       axios
-        .get(`${process.env.THE_FIT_FAMILY_API_URL}/Dog`)
+        .get(`${process.env.THE_FIT_FAMILY_API_URL}/dogs`)
         .then(response => {
-          store.Dog.dog = response.data;
+          store.Dog.dogs = response.data;
           done();
         })
         .catch((error) => {

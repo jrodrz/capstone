@@ -4,8 +4,8 @@ const router = Router();
 
 // Create record in MongoDB Atlas using Mongoose.js ORM
 router.post("/", (request, response) => {
-  const newdog = new Dog(request.body);
-  newdog.save((error, record) => {
+  const newDog = new Dog(request.body);
+  newDog.save((error, record) => {
     // if (error && error.name && error.name === "ValidationError")
     if (error?.name === "ValidationError")
       return response.status(400).json(error.errors);
@@ -48,7 +48,7 @@ router.put("/:id", (request, response) => {
     {
       $set: {
         // Take note that the customer is not included, so it can't update the customer
-        dogs: body.dogs,
+        dog: body.dog,
       }
     },
     {
