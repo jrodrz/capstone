@@ -11,10 +11,11 @@ export default state => html`
   <th>Dog</th>
  </tr>
 ${state.dogs
-  .get(dog = {
-    return:dog
+  .map(dog => {
+    return `<tr><td>${dog.dog}</td></tr>`;
   })
   .join("")}
+
 
 </table>
 `;

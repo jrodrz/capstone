@@ -3,3 +3,4 @@ export default {
   view: "Dog",
   dog:[]
 };
+
