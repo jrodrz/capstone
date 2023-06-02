@@ -10,7 +10,7 @@ export default state => html`
 <tr>
   <th>Dog</th>
  </tr>
-${state.dogs
+${state.dog
   .map(dog => {
     return `<tr><td>${dog.dog}</td></tr>`;
   })

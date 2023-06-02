@@ -63,7 +63,7 @@ router.hooks({
       axios
         .get(`${process.env.THE_FIT_FAMILY_API_URL}/Dog`)
         .then(response => {
-          store.Dog.dogs = response.data;
+          store.Dog.dog = response.data;
           done();
         })
         .catch((error) => {
